@@ -57,7 +57,7 @@ static __inline int8_t *PRV_CHIPSET_GetInfo(void)
 {
     if(CHIPCONFIG->CHIPID == 0x4C347160)
     {
-        return (int8_t *)"A34L710 : Flash 256KB / SRAM 24KB";
+        return (int8_t *)"A34L716 : Flash 256KB / SRAM 24KB";
     }
     else
     {
@@ -135,7 +135,7 @@ RAMFUNC static __inline CONFIG_FLASH_INFO_t PRV_CHIPSET_GetFlashGeometricInfo(vo
 
     switch (CHIPCONFIG->CHIPID)
     {
-        case 0x4C347160: /* A34L710 */
+        case 0x4C347160: /* A34L716 */
             tFlashGeometricInfo.tCflash.un32Size = 0x40000;
             break;
 

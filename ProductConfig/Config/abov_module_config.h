@@ -109,6 +109,11 @@
 //  <i> - Moreover, dead-time for half-bridge circuit and, detecting external protection and over-voltage event are supported.
 #define CONFIG_HAL_MPWM        0
 
+// <q> PWM (Pulse Width Modulation)
+//  <i> - Pulse Width Modulation (PWM) refers to a modulation method that changes the pulse width of the signal to be transmitted.
+//  <i> - It is used for motor control or voltage regulation.
+#define CONFIG_HAL_PWM         0
+
 // </h> Timer Group
 
 // <h> Connectivity & Communication Group
@@ -229,6 +234,19 @@
 //  <i> - Voltage Reference Buffer (VREFBUF) provides a stable reference voltage for ADC, DAC.
 //  <i> - It improves measurement accuracy by reducing the influence of supply voltage and noise on analog conversions.
 #define CONFIG_HAL_VREFBUF     0
+
+// <q> QSPI (Quad Serial Peripheral Interface)
+//  <i> -  specialized communication interface targeting single, dual or quad QSPI NOR flash memories
+//  <i> - QSPI extends the standard SPI protocol by utilizing four data lines (IO0 to IO3) instead of one, allowing for higher data transfer rates.
+//  <i> - It can operate in any of the two following modes:
+//  <i> - Memory-Mapped Mode: In this mode,
+//  <i>  * the QSPI flash memory is mapped into the microcontroller's address space,
+//  <i>  * allowing for direct access to the flash memory as if it were regular RAM or ROM.
+//  <i>  * This mode is particularly useful for executing code directly from the flash memory (eXecute In Place, XIP) or for reading large data sets without the need for explicit read commands.
+//  <i> - Indirect Mode: In this mode,
+//  <i>  * the microcontroller communicates with the QSPI flash memory using specific commands to read from or write to the memory.
+//  <i>  * This mode is typically used for operations that require more control over the data transfer process, such as writing data to the flash memory or performing erase operations.
+#define CONFIG_HAL_QSPI        0
 
 // </h> Miscellaneous Group
 

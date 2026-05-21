@@ -152,6 +152,44 @@ void Interrupt86_Handler     (void) __attribute__ ((weak, alias("Default_Handler
 void Interrupt87_Handler     (void) __attribute__ ((weak, alias("Default_Handler")));
 void Interrupt88_Handler     (void) __attribute__ ((weak, alias("Default_Handler")));
 void Interrupt89_Handler     (void) __attribute__ ((weak, alias("Default_Handler")));
+
+void Interrupt90_Handler     (void) __attribute__ ((weak, alias("Default_Handler")));
+void Interrupt91_Handler     (void) __attribute__ ((weak, alias("Default_Handler")));
+void Interrupt92_Handler     (void) __attribute__ ((weak, alias("Default_Handler")));
+void Interrupt93_Handler     (void) __attribute__ ((weak, alias("Default_Handler")));
+void Interrupt94_Handler     (void) __attribute__ ((weak, alias("Default_Handler")));
+void Interrupt95_Handler     (void) __attribute__ ((weak, alias("Default_Handler")));
+void Interrupt96_Handler     (void) __attribute__ ((weak, alias("Default_Handler")));
+void Interrupt97_Handler     (void) __attribute__ ((weak, alias("Default_Handler")));
+void Interrupt98_Handler     (void) __attribute__ ((weak, alias("Default_Handler")));
+void Interrupt99_Handler     (void) __attribute__ ((weak, alias("Default_Handler")));
+
+void Interrupt100_Handler    (void) __attribute__ ((weak, alias("Default_Handler")));
+void Interrupt101_Handler    (void) __attribute__ ((weak, alias("Default_Handler")));
+void Interrupt102_Handler    (void) __attribute__ ((weak, alias("Default_Handler")));
+void Interrupt103_Handler    (void) __attribute__ ((weak, alias("Default_Handler")));
+void Interrupt104_Handler    (void) __attribute__ ((weak, alias("Default_Handler")));
+void Interrupt105_Handler    (void) __attribute__ ((weak, alias("Default_Handler")));
+void Interrupt106_Handler    (void) __attribute__ ((weak, alias("Default_Handler")));
+void Interrupt107_Handler    (void) __attribute__ ((weak, alias("Default_Handler")));
+void Interrupt108_Handler    (void) __attribute__ ((weak, alias("Default_Handler")));
+void Interrupt109_Handler    (void) __attribute__ ((weak, alias("Default_Handler")));
+void Interrupt110_Handler    (void) __attribute__ ((weak, alias("Default_Handler")));
+void Interrupt111_Handler    (void) __attribute__ ((weak, alias("Default_Handler")));
+void Interrupt112_Handler    (void) __attribute__ ((weak, alias("Default_Handler")));
+void Interrupt113_Handler    (void) __attribute__ ((weak, alias("Default_Handler")));
+void Interrupt114_Handler    (void) __attribute__ ((weak, alias("Default_Handler")));
+void Interrupt115_Handler    (void) __attribute__ ((weak, alias("Default_Handler")));
+void Interrupt116_Handler    (void) __attribute__ ((weak, alias("Default_Handler")));
+void Interrupt117_Handler    (void) __attribute__ ((weak, alias("Default_Handler")));
+void Interrupt118_Handler    (void) __attribute__ ((weak, alias("Default_Handler")));
+void Interrupt119_Handler    (void) __attribute__ ((weak, alias("Default_Handler")));
+void Interrupt120_Handler    (void) __attribute__ ((weak, alias("Default_Handler")));
+void Interrupt121_Handler    (void) __attribute__ ((weak, alias("Default_Handler")));
+void Interrupt122_Handler    (void) __attribute__ ((weak, alias("Default_Handler")));
+void Interrupt123_Handler    (void) __attribute__ ((weak, alias("Default_Handler")));
+void Interrupt124_Handler    (void) __attribute__ ((weak, alias("Default_Handler")));
+
 /*----------------------------------------------------------------------------
   Exception / Interrupt Vector table
  *----------------------------------------------------------------------------*/
@@ -271,8 +309,43 @@ extern const VECTOR_TABLE_Type __VECTOR_TABLE[240];
   Interrupt86_Handler,                      /*   Interrupt 86 */
   Interrupt87_Handler,                      /*   Interrupt 87 */
   Interrupt88_Handler,                      /*   Interrupt 88 */
-  Interrupt89_Handler                       /*   Interrupt 89 */
-                                            /* Interrupts 90 .. 223 are left out */
+  Interrupt89_Handler,                      /*   Interrupt 89 */
+  Interrupt90_Handler,                      /*   Interrupt 90 */
+  Interrupt91_Handler,                      /*   Interrupt 91 */
+  Interrupt92_Handler,                      /*   Interrupt 92 */
+  Interrupt93_Handler,                      /*   Interrupt 93 */
+  Interrupt94_Handler,                      /*   Interrupt 94 */
+  Interrupt95_Handler,                      /*   Interrupt 95 */
+  Interrupt96_Handler,                      /*   Interrupt 96 */
+  Interrupt97_Handler,                      /*   Interrupt 97 */
+  Interrupt98_Handler,                      /*   Interrupt 98 */
+  Interrupt99_Handler,                      /*   Interrupt 99 */
+  Interrupt100_Handler,                     /*  Interrupt 100 */
+  Interrupt101_Handler,                     /*  Interrupt 101 */
+  Interrupt102_Handler,                     /*  Interrupt 102 */
+  Interrupt103_Handler,                     /*  Interrupt 103 */
+  Interrupt104_Handler,                     /*  Interrupt 104 */
+  Interrupt105_Handler,                     /*  Interrupt 105 */
+  Interrupt106_Handler,                     /*  Interrupt 106 */
+  Interrupt107_Handler,                     /*  Interrupt 107 */
+  Interrupt108_Handler,                     /*  Interrupt 108 */
+  Interrupt109_Handler,                     /*  Interrupt 109 */
+  Interrupt110_Handler,                     /*  Interrupt 110 */
+  Interrupt111_Handler,                     /*  Interrupt 111 */
+  Interrupt112_Handler,                     /*  Interrupt 112 */
+  Interrupt113_Handler,                     /*  Interrupt 113 */
+  Interrupt114_Handler,                     /*  Interrupt 114 */
+  Interrupt115_Handler,                     /*  Interrupt 115 */
+  Interrupt116_Handler,                     /*  Interrupt 116 */
+  Interrupt117_Handler,                     /*  Interrupt 117 */
+  Interrupt118_Handler,                     /*  Interrupt 118 */
+  Interrupt119_Handler,                     /*  Interrupt 119 */
+  Interrupt120_Handler,                     /*  Interrupt 120 */
+  Interrupt121_Handler,                     /*  Interrupt 121 */
+  Interrupt122_Handler,                     /*  Interrupt 122 */
+  Interrupt123_Handler,                     /*  Interrupt 123 */
+  Interrupt124_Handler,                     /*  Interrupt 124 */
+                                            /* Interrupts 125 .. 223 are left out */
 };
 
 #if defined ( __GNUC__ )

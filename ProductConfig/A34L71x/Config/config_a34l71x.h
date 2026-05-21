@@ -529,6 +529,32 @@
 
 #endif /* _MODULE_DAC */
 
+#if defined(_MODULE_USB)
+
+#define _USB                             1
+
+/* USB IP version */
+#define CONFIG_USB_VER_VENDOR           'V'
+#define CONFIG_USB_VER_MAJOR             1
+#define CONFIG_USB_VER_EXT               0
+#define CONFIG_USB_VER_MINOR             0
+#define CONFIG_USB_REG_NAME              0
+
+/* USB Maximum IP Count */
+#define CONFIG_USB_MAX_COUNT             1
+
+/* USB Interrupt Handler */
+#define USB0_IRQHandler                  Interrupt44_Handler
+
+/* USB Interrupt Number */
+#define USB_0_IRQ                        USB_IRQn
+
+/* USB Config */
+
+/* USB DMA Config */
+
+#endif /* _MODULE_USB */
+
 
 /* Just in case of no register to give debugger connection */
 #define CONFIG_EMUL_JTAG_CONNECTION      0

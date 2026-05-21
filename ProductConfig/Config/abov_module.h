@@ -138,7 +138,7 @@
 #define _MODULE_QEI
 #endif
 
-#if (CONFIG_HAL_CMP == 1) && defined(COMP0_BASE)
+#if (CONFIG_HAL_CMP == 1) && (defined(COMP0_BASE) || defined(CMP0_BASE))
 #define _MODULE_CMP
 #endif
 
@@ -160,6 +160,14 @@
 
 #if (CONFIG_HAL_VREFBUF == 1) && defined(VREFBUF_BASE)
 #define _MODULE_VREFBUF
+#endif
+
+#if (CONFIG_HAL_PWM == 1) && defined(PWM0_BASE)
+#define _MODULE_PWM
+#endif
+
+#if (CONFIG_HAL_QSPI == 1) && defined(QSPI_BASE)
+#define _MODULE_QSPI
 #endif
 
 #endif /* _ABOV_MODEULS_H_*/

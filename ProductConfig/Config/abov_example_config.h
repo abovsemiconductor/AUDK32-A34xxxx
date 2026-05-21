@@ -136,6 +136,11 @@
 //  <i> - Moreover, dead-time for half-bridge circuit and, detecting external protection and over-voltage event are supported.
 #define EX_MULTI_MPWM        0
 
+// <q> PWM (Pulse Width Modulation)
+//  <i> - Pulse Width Modulation (PWM) refers to a modulation method that changes the pulse width of the signal to be transmitted.
+//  <i> - It is used for motor control or voltage regulation.
+#define EX_MULTI_PWM         0
+
 // </h> Timer Group
 
 // <h> Connectivity & Communication Group
@@ -178,6 +183,14 @@
 //  <i> - Quadrature Encoder Interface (QEI) generates a mechanical position signal.
 //  <i> - It is capable of detecting position and speed of rotating motion systems such as Motor.
 #define EX_MULTI_QEI         0
+
+// <q> QSPI (Quad Serial Peripheral Interface)
+//  <i> -  specialized communication interface targeting single, dual or quad QSPI NOR flash memories
+//  <i> - QSPI extends the standard SPI protocol by utilizing four data lines (IO0 to IO3) instead of one, allowing for higher data transfer rates.
+//  <i> - It can operate in any of the two following modes:
+//  <i> - Memory-Mapped Mode: In this mode,
+//  <i>  * the QSPI flash memory is mapped into the microcontroller's address space,
+#define EX_MULTI_QSPI        0
 
 // </h> Connectivity & Communication Group
 
@@ -347,6 +360,12 @@
 #if (EX_MULTI_VREFBUF == 1)
 #define VREFBUF_TC
 #endif
+#if (EX_MULTI_PWM == 1)
+#define PWM_TC
+#endif
+#if (EX_MULTI_QSPI == 1)
+#define QSPI_TC
+#endif
 
 #endif
 
@@ -442,6 +461,14 @@
 
 #if defined(VREFBUF_TC)
 #define CONFIG_HAL_VREFBUF    1
+#endif
+
+#if defined(PWM_TC)
+#define CONFIG_HAL_PWM        1
+#endif
+
+#if defined(QSPI_TC)
+#define CONFIG_HAL_QSPI       1
 #endif
 
 #endif /* _EXAMPLE_CONFIG_H_ */
